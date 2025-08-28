@@ -39,6 +39,10 @@ const SignUp = ({setCurrentPage}) => {
       setError("Please enter password");
       return;
     }
+    if(password.length < 8){
+      setError("Password must be at least 8 characters.");
+      return;
+    }
     setError("");
 
     try {
@@ -102,7 +106,7 @@ const SignUp = ({setCurrentPage}) => {
           value={password}
           onChange={({target})=>setPassword(target.value)}
           label="Password"
-          placeholder="Min 8 Characres"
+          placeholder="Min 8 characters"
           type="password"
         />
 
