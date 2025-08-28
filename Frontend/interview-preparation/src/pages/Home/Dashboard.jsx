@@ -4,7 +4,7 @@ import { FaCode, FaDatabase, FaProjectDiagram } from "react-icons/fa";
 import { SiReact, SiPython, SiGo } from "react-icons/si";
 import { CARD_BG } from "../../utils/data";
 import toast from "react-hot-toast";
-import DashboardLayout from '../../components/Layouts/Dashboardlayout';
+import DashboardLayout from '../../components/Layouts/DashboardLayout';
 import axiosInstance from '../../utils/axiosInstance';
 import { API_PATHS } from '../../utils/apiPaths';
 

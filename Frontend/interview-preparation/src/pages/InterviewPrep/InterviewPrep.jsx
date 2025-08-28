@@ -14,7 +14,7 @@ import QuestionCard from '../../components/Cards/QuestionCard';
 import AIResponsePreview from './components/AIResponsePreview';
 import Drawer from '../../components/Drawer';
 import SkeletonLoader from '../../components/Loader/SkeletonLoader';
-import DashboardLayout from '../../components/Layouts/Dashboardlayout';
+import DashboardLayout from '../../components/Layouts/DashboardLayout';
 
 
 const InterviewPrep = () => {
