@@ -18,6 +18,7 @@ const SignUp = ({setCurrentPage}) => {
   const [password,setPassword]=useState("");
 
   const [error,setError]=useState("");
+  // Removed OTP flow
 
   const navigate=useNavigate();
 
@@ -52,6 +53,7 @@ const SignUp = ({setCurrentPage}) => {
           profileImageUrl = imgUploadRes.imageUrl || "";
         }
 
+        // Register directly without OTP
         const response = await axiosInstance.post(API_PATHS.AUTH.REGISTER, {
           name: fullName,
           email,
@@ -115,7 +117,7 @@ const SignUp = ({setCurrentPage}) => {
       {error && <p className='text-red-500 text-xs pb-2.5'>{error}</p>}
 
       <button type="submit" className='btn-primary'>
-        SIGN UP
+        Create account
       </button>
 
       <p className='text-[13px] text-slate-800 mt-3'>

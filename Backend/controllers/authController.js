@@ -1,6 +1,7 @@
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+// Removed OTP verification feature
 
 // Generate JWT Token
 const generateToken = (userId) => {
@@ -46,6 +47,7 @@ const registerUser = async (req, res) => {
   }
 
 }
+
 
 // @desc   Login user
 // @route  POST /api/auth/login
